@@ -22,12 +22,11 @@ Advanced regression techniques like random forest and gradient boosting
 
 **-------Jupyter Notebooks-------**
     
-    a.Baseline Submission 
-    b.EDA, DataCleaning, Feature Engineering, Regression Model Development
+   
+## ---------------------- Summary of Notebook 2: Baseline Submission --------------------- 
+The goal in this notebook was merely just to load the data, do some minor cleaning, then plugging it into a basic linear model using sklearn. My kaggle score for was 0.20640 ranking me 3518 out of 4312. 
 
-    
-
-## ---------------------- Summary of Notebook 2: ---------------------##    
+## ---------------------- Summary of Notebook 2: EDA, DataCleaning, Feature Engineering, Regression Model Development ---------------------    
 In this notebook I read and explore the data set deeply to establish a strategy for my feature engineering. This is a continuation from my initial baseline notebook where i did a soft EDA, mainly addressing null values, then running a basic linear regression to predict the 'SalesPrice' from the test training set. Below is an outline summarizing the two main parts of this notebook
 
 **Pt.1 Reading the dataset**
