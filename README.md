@@ -7,7 +7,7 @@ For my final project I chose the housing prices prediction competition. The goal
 
 ### Proeject Files:
 
-**PowerPoint Presentation** (Presentation.pptx)
+**Project Presentation** (Presentation.pptx) - Slide deck covering my method and strategies navigating through baseline submission, EDA, feature engineering, and regression model development. 
 
    **-----------Data------------------**
 
