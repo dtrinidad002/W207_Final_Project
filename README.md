@@ -3,14 +3,7 @@
  ## W207 Final Project- David Trinidad (Fall 2022)
 
 ## Project scope:
-
-Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
-
-With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
-
-Practice Skills
-Creative feature engineering 
-Advanced regression techniques like random forest and gradient boosting
+For my final project I chose the housing prices prediction competition. The goal is to develop a machine learning model to predict the sales price from the testing data set. I chose this project because it is pretty straight forward and I anticipate that I will be utilizing Linear Regression for the majority of my Data Science Career. 
 
 ### Proeject Files:
    **-----------Data------------------**
@@ -18,7 +11,8 @@ Advanced regression techniques like random forest and gradient boosting
     a. original test data (test.csv)
     b. orignal training data (train.csv)
     c. Baseline Sales prediction data (baseline_submission.csv
-    d. Final prediction outpiut data (test_score.csv)
+    d. Final Submission (final_Submission1.csv)
+    e. Cleaned Data (clean_df.csv)
 
 **-------Jupyter Notebooks-------**
    
@@ -40,27 +34,19 @@ The majority of the NA/missing data is observed within the object data type. It'
  
 <u>*a.Correlation Heatmap*</u> I executed a correlation matrix with the training data set and the features that demonstrated the highest correlation to Saleprice is  ['GrLivArea','OverallQual', '1stFlrSF', 'GarageCars']  
 
-<u>*b.Pairwise Plots:*</u> I executed a pairwise plot utilizing the features with the highest correlation to sales price to gather additional insight. The output of the Pairwise plot included histograms, and scatter plots. Each histogram resembles a bell shape of some sort which is indicative of a normal distribution. Each scatter plot displayed a positive increase directionally. 
+<u>*b.Pairwise Plots:*</u> I executed a pairwise plot utilizing the features with the highest correlation to sales price to gather additional insight.
 
 <u>*c.Linear regression Plot:*</u> GrLivArea(X), with SalesPrice(Y). We noticed two data outliers where an extremely high Ground Living Area resulted to an extremely low sales price. This is something I'll consider addressing when doing feature engineering. 
 
-<u>*d.Plotting OverallQual with Sales Price:*</u> We observe a positive with an increase which makes a lot of sense
-Since this feature is ordinal, I will utilize dummy variables encoding during the feature engineering
+<u>*d.Scatter Plot for New Feature "TotalSF" [total Square footage]
 
 **Pt.4 Data Cleaning and Data engineering**  
+    a. handling missing values
+    b. converting categoricals to numerical using label-encoding. 
 
-    a. handling missing values  
-    b. handling missing values   
-
-
-**Pt.5 Regression Modelling** 
-
+**Pt.5 Regression Modelling** - Calculating Root Mean Squared using default parameters for the models below. We then determine the best parameters to get the lowest root mean squared error using GridSearchCV method. 
      a.Lasso  
-        b.RandomForestRegressor  
-        c.ElasticNet  
-        d.KernelRidge  
-        e.GradientBoostingRegressor
-
-
-
-(Link to video explanation??)
+     b.RandomForestRegressor  
+     c.ElasticNet  
+     d.KernelRidge  
+     e.GradientBoostingRegressor
