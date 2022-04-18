@@ -6,6 +6,9 @@
 For my final project I chose the housing prices prediction competition. The goal is to develop a machine learning model to predict the sales price from the testing data set. I chose this project because it is pretty straight forward and I anticipate that I will be utilizing Linear Regression for the majority of my Data Science Career. 
 
 ### Proeject Files:
+
+**PowerPoint Presentation** (Presentation.pptx)
+
    **-----------Data------------------**
 
     a. original test data (test.csv)
